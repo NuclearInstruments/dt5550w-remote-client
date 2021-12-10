@@ -105,8 +105,12 @@ if __name__ == '__main__':
 
     CURRENT_RUN_NUMBER = 15
     CURRENT_RUN_TYPE = 1
-    START_UNIX_TIME = int(time.time())
     T_RUN_S = 10
+    
+
+    
+    START_UNIX_TIME = int(time.time())
+    
 
     ret = SendCommandToSlaves("START", CURRENT_RUN_NUMBER, START_UNIX_TIME, CURRENT_RUN_TYPE, True)
     if ret == True:
